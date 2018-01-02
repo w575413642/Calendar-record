@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>梦咖游戏</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/jquery.lineProgressbar.min.css">
+</head>
+<body>
+<div class="top bg-ff">
+  <div class="container clearfix pb2">
+    <div class="left clearfix">
+      <img src="images/h_logo.png" alt="" class="left h-logo">
+      <a href="#" class="left h60 ml50">首页</a>
+      <a href="#" class="left h60 ml50">意见/建议</a>
+    </div>
+    <div class="right clearfix">
+      <div class="left clearfix search-bar b-e5 br5 h36">
+        <input type="text" class="search left plr12 h36 f15" placeholder="搜索您喜欢的">
+        <img src="images/h_search.png" alt="" class="search-icon right mlr12">
+      </div>
+      <a href="#" class="left h36 br5 plr15 bg-diy cf b-diy ml20 mt12" id="register-btn">注册</a>
+      <a href="#" class="left h36 br5 plr15 b-e5 ml20 mt12" id="login-btn">登录</a>
+    </div>
+  </div>
+</div>
+<div class="banner w100">
+  <img src="images/h_banner.png" alt="">
+</div>
+<div class="main-title">
+  <div class="container clearfix ptb12">
+    <div class="crumb f15 c9 left h30">
+      <a href="#" class="plr4 f13"><img src="images/h_home.png" alt="" class="home-icon"></a>&rsaquo;
+      <a href="#" class="plr4 f13">游戏版区</a>&rsaquo;
+      <a href="#" class="plr4 f13">英雄联盟游戏区</a>&rsaquo;
+      <a href="#" class="plr4 f13">前两天玩游戏和对面吵了起来</a>
+    </div>
+    <div class="right h30">
+          <button type="button" class="inb b-e5 br5 c3 f15 h30 plr8 ml6">返回</button>
+          <button type="button" class="inb bg-diy b-diy br5 cf f15 h30 plr8 ml6">1</button>
+          <button type="button" class="inb b-e5 br5 c3 f15 h30 plr8 ml6">2</button>
+          <button type="button" class="inb b-e5 br5 c3 f15 h30 plr8 ml6">3</button>
+          <button type="button" class="inb b-e5 br5 c3 f15 h30 plr8 ml6">4</button>
+          <button type="button" class="inb b-e5 br5 c3 f15 h30 plr8 ml6">5</button>
+          <button type="button" class="inb b-e5 br5 c3 f15 h30 plr8 ml6">下一页</button>
+        </div>
+  </div>
+</div>
+<div class="forum-pane">
+  <div class="container clearfix">
+    <div class="main-pane left">
+      <div class="main-inner-pane bg-ff">
+      <div class="main-inner-title bg-ff clearfix ptb8 plr15 bb-e5">
+        <span class="left f16 h32">前两天玩游戏和对面吵了起来</span>
+        <div class="right clearfix f13">
+          <button type="button" class="left h32 b-e5 br5 plr8 ml8 c6">
+            <img src="images/h_agree.png" alt="" class="agree-icon mr4">点赞本帖
+          </button>
+          <button type="button" class="left h32 b-e5 br5 plr8 ml8 c6">只看楼主</button>
+          <button type="button" class="left h32 b-e5 br5 plr8 ml8 c6">收藏</button>
+          <button type="button" class="left h32 b-e5 br5 plr8 ml8 c6 comment-btn">
+            <img src="images/h_message.png" alt="" class="reply-icon mr4">回复
+          </button>
+        </div>
+      </div>
+      <div class="user-pane poster-pane clearfix">
+        <div class="user-bar left">
+          <div class="profile-pane ptb8 pr4 pl15 bb-dash p-r">
+            <button type="button" class="nickname w100 fw-bold ta-left">最帅的我</button>
+            <div class="profile-bar b-e5 pt15 pl15 bg-ff clearfix" style="display:none">
+              <img src="images/h_avatar.png" alt="" class="avatar left">
+              <div class="right plr12 f12 member-info">
+                <p class="pb4">
+                  <img src="images/h_user.png" alt="" class="user-icon mr8">最帅的我
+                </p>
+                <div class="clearfix">
+                  <span class="c9 ptb4 w50 left">积分：<span class="c-diy">5556</span></span>
+                  <span class="c9 ptb4 w50 left">关注：<span class="c-diy">6</span></span>
+                  <span class="c9 ptb4 w50 left">帖子：<span class="c-diy">888</span></span>
+                  <span class="c9 ptb4 w50 left">城市：<span class="c3">东莞</span></span>
+                  <span class="c9 ptb4 w50 left">注册时间：<span class="c3">2017-01-26</span></span>
+                  <span class="c9 ptb4 w50 left">最后登录：<span class="c3">2017-03-21</span></span>
+                </div>
+                <div class="clearfix ptb8 bt-e5">
+                  <button type="button" class="left f12 inb">
+                    <img src="images/h_p_message.png" alt="" class="pmessage-icon mr4">私信
+                  </button>
+                  <a href="#" class="right f12 inb">进入个人中心>></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="avatar-pane bg-ff m15">
+            <img src="images/h_avatar.png" alt="" class="avatar m4 w100">
+          </div>
+          <div class="user-info f13 mlr15">
+            <span class="inb plr6 ta-center br-e5">
+              <span class="db">1</span>
+              <span class="db">主题</span>
+            </span>
+            <span class="inb plr6 ta-center br-e5">
+              <span class="db">304</span>
+              <span class="db">帖子</span>
+            </span>
+            <span class="inb plr6 ta-center">
+              <span class="db">3004</span>
+              <span class="db">积分</span>
+            </span>
+          </div>
+          <div class="level-pane ptb20 mlr15">
+            <p class="level-info f14 ta-center clearfix plr12">
+              <span class="left">Lv.0</span>
+              <span class="level right" style="display:none">弱鸡0级</span>
+            </p>
+            <div class="progressbar progressbar-bar"></div>
+          </div>
+        </div>
+        <div class="post-bar right plr15">
+          <div class="bb-dash ptb8 clearfix f13">
+            <img src="images/h_admin.png" alt="" class="left member-icon">
+            <span class="left c9 plr8 br-e5">发表于 2017年11月21日 11:23:24</span>
+            <button type="button" class="left only-poster plr4">只看该作者</button>
+            <div class="right">
+              <span class="left">楼主</span>
+              <p class="left clearfix pl30">
+                <span class="left mlr4">电梯直达</span>
+                <input type="number" class="search-floor left ta-center">
+                <button type="button" class="left plr4">
+                  <img src="images/h_stairs.png" alt="" class="stairs-icon">  
+                </button>
+              </p>
+            </div>
+          </div>
+          <div class="post-content ptb12">
+            战利品里开出来一个滑板鞋碎片，然后合成永久的想解锁，一点解锁就出这个，从昨天开始就这样，到现在还是这样?
+          </div>
+          <div class="post-bottom f13 clearfix right pb20">
+            <span class="left">
+              <img src="images/h_agree_status.png" alt="" class="agree-icon">（888）
+            </span>
+            <button type="button" class="left ml18">举报</button>
+            <button type="button" class="left ml18 comment-btn">回复</button>
+          </div>
+        </div>
+      </div>
+      <div class="user-pane member-pane clearfix p-r">
+        <div class="user-bar left">
+          <div class="profile-pane ptb8 pr4 pl15 bb-dash p-r">
+            <button type="button" class="nickname w100 fw-bold ta-left">最帅的我</button>
+            <div class="profile-bar b-e5 pt15 pl15 bg-ff clearfix" style="display:none">
+              <img src="images/h_avatar.png" alt="" class="avatar left">
+              <div class="right plr12 f12 member-info">
+                <p class="pb4">
+                  <img src="images/h_user.png" alt="" class="user-icon mr8">最帅的我
+                </p>
+                <div class="clearfix">
+                  <span class="c9 ptb4 w50 left">积分：<span class="c-diy">5556</span></span>
+                  <span class="c9 ptb4 w50 left">关注：<span class="c-diy">6</span></span>
+                  <span class="c9 ptb4 w50 left">帖子：<span class="c-diy">888</span></span>
+                  <span class="c9 ptb4 w50 left">城市：<span class="c3">东莞</span></span>
+                  <span class="c9 ptb4 w50 left">注册时间：<span class="c3">2017-01-26</span></span>
+                  <span class="c9 ptb4 w50 left">最后登录：<span class="c3">2017-03-21</span></span>
+                </div>
+                <div class="clearfix ptb8 bt-e5">
+                  <button type="button" class="left f12 inb">
+                    <img src="images/h_p_message.png" alt="" class="pmessage-icon mr4">私信
+                  </button>
+                  <a href="#" class="right f12 inb">进入个人中心>></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="avatar-pane bg-ff m15">
+            <img src="images/h_avatar.png" alt="" class="avatar m4 w100">
+          </div>
+          <div class="user-info f13 mlr15">
+            <span class="inb plr6 ta-center br-e5">
+              <span class="db">1</span>
+              <span class="db">主题</span>
+            </span>
+            <span class="inb plr6 ta-center br-e5">
+              <span class="db">304</span>
+              <span class="db">帖子</span>
+            </span>
+            <span class="inb plr6 ta-center">
+              <span class="db">3004</span>
+              <span class="db">积分</span>
+            </span>
+          </div>
+          <div class="level-pane ptb20 mlr15">
+            <p class="level-info f14 ta-center clearfix plr12">
+              <span class="left">Lv.0</span>
+              <span class="level right" style="display:none">弱鸡0级</span>
+            </p>
+            <div class="progressbar progressbar-bar"></div>
+          </div>
+        </div>
+        <div class="post-bar right plr15 pb20">
+          <div class="bb-dash ptb8 clearfix f13">
+            <img src="images/h_member.png" alt="" class="left member-icon">
+            <span class="left c9 plr8 br-e5">发表于 2017年11月21日 11:23:24</span>
+            <button type="button" class="left only-poster plr4">只看该作者</button>
+            <div class="right">
+              <span class="left">沙发</span>
+            </div>
+          </div>
+          <div class="post-content ptb12">
+            估计要好久才能修复好这个漏洞
+          </div>
+          <div class="post-bottom f13 right clearfix">
+            <span class="left">
+              <img src="images/h_agree_status.png" alt="" class="agree-icon">（888）
+            </span>
+            <button type="button" class="report-btn left ml18">举报</button>
+            <button type="button" class="reply-btn left ml18" sel="0" onclick="replySet(this);">回复</button>
+          </div>
+          <div class="message-pane p15 b-e5 w100" style="display:none">
+            <ul>
+              <li class="ptb4 f14">暂无评论哦</li>
+              
+            </ul>
+            <div class="w100 clearfix">
+              <button type="button" class="inner-comment-btn right f14 b-bf plr6 br5 h30" sel="0" onclick="replySet(this);">我也说一句</button>
+            </div>
+            <div class="w100 p20 clearfix" style="display:none">
+              <input type="text" class="message w100 b-bf h36 br5 plr12 ptb4" maxlength="80" placeholder="您可输入80字">
+              <button type="button" class="inner-comment right bg-diy br5 cf f14 h30 plr12 mt12">发表</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="user-pane member-pane clearfix p-r">
+        <div class="user-bar left">
+          <div class="profile-pane ptb8 pr4 pl15 bb-dash p-r">
+            <button type="button" class="nickname w100 fw-bold ta-left">最帅的我</button>
+            <div class="profile-bar b-e5 pt15 pl15 bg-ff clearfix" style="display:none">
+              <img src="images/h_avatar.png" alt="" class="avatar left">
+              <div class="right plr12 f12 member-info">
+                <p class="pb4">
+                  <img src="images/h_user.png" alt="" class="user-icon mr8">最帅的我
+                </p>
+                <div class="clearfix">
+                  <span class="c9 ptb4 w50 left">积分：<span class="c-diy">5556</span></span>
+                  <span class="c9 ptb4 w50 left">关注：<span class="c-diy">6</span></span>
+                  <span class="c9 ptb4 w50 left">帖子：<span class="c-diy">888</span></span>
+                  <span class="c9 ptb4 w50 left">城市：<span class="c3">东莞</span></span>
+                  <span class="c9 ptb4 w50 left">注册时间：<span class="c3">2017-01-26</span></span>
+                  <span class="c9 ptb4 w50 left">最后登录：<span class="c3">2017-03-21</span></span>
+                </div>
+                <div class="clearfix ptb8 bt-e5">
+                  <button type="button" class="left f12 inb">
+                    <img src="images/h_p_message.png" alt="" class="pmessage-icon mr4">私信
+                  </button>
+                  <a href="#" class="right f12 inb">进入个人中心>></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="avatar-pane bg-ff m15">
+            <img src="images/h_avatar.png" alt="" class="avatar m4 w100">
+          </div>
+          <div class="user-info f13 mlr15">
+            <span class="inb plr6 ta-center br-e5">
+              <span class="db">1</span>
+              <span class="db">主题</span>
+            </span>
+            <span class="inb plr6 ta-center br-e5">
+              <span class="db">304</span>
+              <span class="db">帖子</span>
+            </span>
+            <span class="inb plr6 ta-center">
+              <span class="db">3004</span>
+              <span class="db">积分</span>
+            </span>
+          </div>
+          <div class="level-pane ptb20 mlr15">
+            <p class="level-info f14 ta-center clearfix plr12">
+              <span class="left">Lv.0</span>
+              <span class="level right" style="display:none">弱鸡0级</span>
+            </p>
+            <div class="progressbar progressbar-bar"></div>
+          </div>
+        </div>
+        <div class="post-bar right plr15 pb20">
+          <div class="bb-dash ptb8 clearfix f13">
+            <img src="images/h_member.png" alt="" class="left member-icon">
+            <span class="left c9 plr8 br-e5">发表于 2017年11月21日 11:23:24</span>
+            <button type="button" class="left only-poster plr4">只看该作者</button>
+            <div class="right">
+              <span class="left">沙发</span>
+            </div>
+          </div>
+          <div class="post-content ptb12">
+            估计要好久才能修复好这个漏洞
+          </div>
+          <div class="post-bottom f13 right clearfix">
+            <span class="left">
+              <img src="images/h_agree_status.png" alt="" class="agree-icon">（888）
+            </span>
+            <button type="button" class="report-btn left ml18">举报</button>
+            <button type="button" class="reply-btn left ml18" sel="0" onclick="replySet(this);">回复</button>
+          </div>
+          <div class="message-pane p15 b-e5 w100" style="display:none">
+            <ul>
+              <li class="ptb4">
+                <div class="w100 ta-left clearfix f14">
+                  <img src="images/h_avatar.png" alt="" class="avatar left mr4">
+                  <span class="left c-diy">你的名字<span>：</span></span>
+                  <span class="left">是啊是啊，慢的要死</span>
+                </div>
+                <div class="w100 ta-right clearfix f13">
+                  <span class="mr8 c6">2017-08-21 08:36</span>
+                  <button type="button" class="f13 inner-reply-btn" sel="0" onclick="replySet(this);">回复</button>
+                </div>
+                <div class="w100 clearfix ptb4 pl20" style="display:none">
+                  <input type="text" class="message left w90 b-bf h30 br5 plr12 ptb2 f13" maxlength="80" placeholder="您可输入80字">
+                  <button type="button" class="inner-reply right bg-diy br5 cf f13 h30 plr12">发表</button>
+                </div>
+              </li>
+              <li class="ptb4">
+                <div class="w100 ta-left clearfix f14">
+                  <img src="images/h_avatar.png" alt="" class="avatar left mr4">
+                  <span class="left c-diy">你的名字<span>：</span></span>
+                  <span class="left">是啊是啊，慢的要死</span>
+                </div>
+                <div class="w100 ta-right clearfix f13">
+                  <span class="mr8 c6">2017-08-21 08:36</span>
+                  <button type="button" class="f13 inner-reply-btn" sel="0" onclick="replySet(this);">回复</button>
+                </div>
+                <div class="w100 clearfix ptb4 pl20" style="display:none">
+                  <input type="text" class="message left w90 b-bf h30 br5 plr12 ptb2 f13" maxlength="80" placeholder="您可输入80字">
+                  <button type="button" class="inner-reply right bg-diy br5 cf f13 h30 plr12">发表</button>
+                </div>
+              </li>
+            </ul>
+            <div class="w100 clearfix">
+              <span class="left f13 c6 h30">还有8条回复，<button type="button" class="c-diy">点击查看</button></span>
+              <button type="button" class="inner-comment-btn right f14 b-bf plr6 br5 h30" sel="0" onclick="replySet(this);">我也说一句</button>
+            </div>
+            <div class="w100 p20 clearfix" style="display:none">
+              <input type="text" class="message w100 b-bf h36 br5 plr12 ptb4" maxlength="80" placeholder="您可输入80字">
+              <button type="button" class="inner-comment right bg-diy br5 cf f14 h30 plr12 mt12">发表</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix p15">
+        <div class="left clearfix">
+          <button type="button" class="left bg-diy br5 cf f15 h30 mr12 post-btn">
+            <select class="catalog-post f15 cf plr8 inb h30" style="width:90px;">
+              <option value="" class="c3">发帖</option>
+              <option value="1" class="c3">发帖1</option>
+              <option value="2" class="c3">发帖2</option>
+              <option value="3" class="c3">发帖3</option>
+            </select>
+          </button>
+          <button type="button" class="left bg-diy br5 cf f15 h30 plr15 ml8 comment-btn">回复</button>
+        </div>
+        <div class="right">
+          <button type="button" class="inb b-e5 br5 c3 f15 h30 plr8 ml6">返回</button>
+          <button type="button" class="inb bg-diy b-diy br5 cf f15 h30 plr8 ml6">1</button>
+          <button type="button" class="inb b-e5 br5 c3 f15 h30 plr8 ml6">2</button>
+          <button type="button" class="inb b-e5 br5 c3 f15 h30 plr8 ml6">3</button>
+          <button type="button" class="inb b-e5 br5 c3 f15 h30 plr8 ml6">4</button>
+          <button type="button" class="inb b-e5 br5 c3 f15 h30 plr8 ml6">5</button>
+          <button type="button" class="inb b-e5 br5 c3 f15 h30 plr8 ml6">下一页</button>
+        </div>
+      </div>
+      </div>
+      <div class="comment-pane mtb25 b-bf w100">
+        <p class="f16 plr15 ptb12 bg-f5 bb-bf">发表回复</p>
+        <div class="bg-ff p15">
+          <div class="clearfix">
+          <select class="catalog f15 b-bf h36 plr8 inb">
+            <option value="">选择主题分类</option>
+            <option value="1">英雄联盟</option>
+            <option value="2">王者荣耀</option>
+            <option value="3">绝地求生</option>
+          </select>
+          <input type="text" class="comment-title b-bf h36 plr8 ml8 inb" placeholder="请输入标题">
+          <span class="f14 c9 ml8 h36 inb">最多可以输入100个字符</span>
+          </div>
+          <img src="images/comment_bar.jpg" alt="" class="w100 mtb15">
+          <div class="w100 ta-right">
+            <button type="button" class="bg-diy br5 cf f15 h36 plr15 post-btn" id="submit">确定发布</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="side-pane right ml15">
+      <div class="mb15">
+        <div class="post-info plr15 bg-fd">
+          <div class="bb-e5 ptb20 w100 ta-center">
+              <span class="inb plr15 ta-center">
+                <span class="db f16 fw-bold">4396</span>
+                <span class="db f15 c9 pt8">浏览</span>
+              </span>
+              <span class="inb plr15 ta-center">
+                <span class="db f16 fw-bold">21</span>
+                <span class="db f15 c9 pt8">评论</span>
+              </span>
+              <span class="inb plr15 ta-center">
+                <span class="db f16 fw-bold">255</span>
+                <span class="db f15 c9 pt8">点赞</span>
+              </span>
+            </div>
+          </div>
+          <div class="post-setup ptb20 plr15 clearfix bg-ff">
+            <a href="#" class="inb bg-diy cf br5 h36 ta-center left mtb6 f14">
+              <img src="images/h_add.png" alt="" class="mr8">发布新帖
+            </a>
+            <a href="#" class="inb bg-diy cf br5 h36 ta-center right mtb6 f14">
+              <img src="images/h_fallback.png" alt="" class="mr8">返回列表
+            </a>
+            <a href="#" class="inb bg-diy cf br5 h36 ta-center left mtb6 f14">
+              <img src="images/h_setup.png" alt="" class="mr8">帖子操作
+            </a>
+            <a href="#" class="inb bg-diy cf br5 h36 ta-center right mtb6 f14">
+              <img src="images/h_follow.png" alt="" class="mr8">我的收藏
+            </a>
+          </div>
+      </div>
+      <div class="mb15 bg-ff plr15 ptb20">
+        <h2 class="mb4 f15">贴吧热议</h2>
+        <ul class="hot-post">
+          <li class="ptb12 bb-dash">
+            <a href="#" class="inb text-hidden f14">
+              <span class="hot-post-order pl12 pr2 mr8 hottest1">1</span>哪个女英雄的罩杯是最大的呢？
+            </a>
+          </li>
+          <li class="ptb12 bb-dash">
+            <a href="#" class="inb text-hidden f14">
+              <span class="hot-post-order pl12 pr2 mr8 hottest2">2</span>哪个女英雄的罩杯是最大的呢？
+            </a>
+          </li>
+          <li class="ptb12 bb-dash">
+            <a href="#" class="inb text-hidden f14">
+              <span class="hot-post-order pl12 pr2 mr8 hottest3">3</span>哪个女英雄的罩杯是最大的呢？
+            </a>
+          </li>
+          <li class="ptb12 bb-dash">
+            <a href="#" class="inb text-hidden f14">
+              <span class="hot-post-order pl12 pr2 mr8">4</span>哪个女英雄的罩杯是最大的呢？哪个女英雄的罩杯是最大的呢？
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.lineProgressbar.js"></script>
+<script>
+  $('.progressbar').LineProgressbar({
+    percentage:60,
+    duration:100,
+    ShowProgressCount:false,
+    fillBackgroundColor:'#52e4a8',
+    backgroundColor:'#d9d9d9',
+    radius:'18px',
+    height:'13px',
+    width:'82%'
+  });
+
+  $(function(){
+    // 点回复回到评论框
+    $('body').on('click','.comment-btn',function(){
+      $(window).scrollTop($(document).height());
+    })
+
+    // 标题与边栏不滚动
+    $(window).scroll(function(){
+      if($(window).scrollTop()>=300){
+        var leftLen = rightLen = ($(window).outerWidth()-1200)/2;
+        $('.main-inner-title').css({'left':leftLen+'px'}).addClass('top-fixed');
+        $('.side-pane').css({'right':rightLen+'px'}).addClass('top-fixed');
+      }else if($(window).scrollTop()<300){
+        $('.main-inner-title').removeClass('top-fixed');
+        $('.side-pane').removeClass('top-fixed');
+      }
+    })
+
+    // 悬浮展开隐藏个人中心块
+    $('.profile-pane').mouseenter(function(){
+      $(this).children('.profile-bar').slideDown(300);
+    }).mouseleave(function(){
+      $(this).children('.profile-bar').slideUp(300);
+    })
+
+    // 页面加载时用户头像模块与帖子模块高度一致
+    $('.post-bar').each(function(){
+        var postHeight = $(this).outerHeight();
+        if(postHeight>=380){
+          $(this).siblings('.user-bar').outerHeight(postHeight);
+        }else{
+          $(this).outerHeight(380);
+        }
+      })
+
+    $('.progressbar-bar').mouseenter(function(){
+      $(this).prev().children('.level').fadeIn(300);
+    }).mouseleave(function(){
+      $(this).prev().children('.level').fadeOut(300);
+    })
+  })
+    // 用户头像模块与帖子模块高度一致
+    function calcHeight(obj){
+        var postHeight = $(obj).parents('.post-bar').outerHeight();
+        if(postHeight>=380){
+          $(obj).parents('.post-bar').siblings('.user-bar').outerHeight(postHeight);
+        }else{
+          $(obj).parents('.post-bar').outerHeight(380);
+        }
+    }
+  // 点回复展开隐藏评论同时调节两边高度一致
+    function replySet(obj){
+      if($(obj).attr('sel')=='0'){
+        if($(obj).text()=='回复'){
+          $(obj).text('收起回复');
+        }
+        $(obj).attr('sel','1').parent().next().slideDown(300,function(){
+          $(this).parents('.post-bar').outerHeight($(this).parents('.post-bar').outerHeight()+$(this).outerHeight());
+          calcHeight(this);
+        });
+      }else if($(obj).attr('sel')=='1'){
+        if($(obj).text()=='收起回复'){
+          $(obj).text('回复');
+        }
+        $(obj).attr('sel','0').parent().next().slideUp(300,function(){
+          $(this).parents('.post-bar').outerHeight($(this).parents('.post-bar').outerHeight()-$(this).outerHeight());
+          calcHeight(this);
+        });
+      }
+    }
+</script>
+</body>
+</html>

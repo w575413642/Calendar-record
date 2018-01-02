@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>登录</title>
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
+</head>
+<body>
+  <div style="border: 1px solid black;">
+  <h2>登陆</h2>
+  <input type="text" name="" id="aa" value="" placeholder="用户名">
+    <input type="password" name="" id="bb" value="" placeholder="密码">
+    <div class="" onclick="logs()">
+      登录
+    </div>
+    <a href="los">注册</a>
+  </div>
+  <script>
+  function logs(){
+    $.ajax({
+      url:'http://118.89.64.12:3000/api/login',
+      type:'GET', //GET
+      async:true,    //或false,是否异步
+      data:{
+          user:$('#aa').val(),
+          password:md5($('#bb').val())
+      },
+      dataType:'json',    //返回的数据格式：json/xml/html/script/jsonp/text
+      success:function(data,textStatus,jqXHR){
+          console.log(data)
+          if(data.status == 2){
+           location.href = "http://118.89.64.12:3000/api/join"
+          }
+          if(data.status == 0){
+            alert(data.info)
+          }
+      },
+      error:function(xhr){
+          console.log(xhr)
+      },
+
+    })
+  }
+
+  </script>
+</body>
+</html>

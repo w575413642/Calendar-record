@@ -1,0 +1,920 @@
+/* 通用设定 */
+
+body {
+    background: #f7f7f7;
+}
+
+.wid1{
+	width: 100%;	
+}
+/* 头部 */
+
+.detail-header {
+    background: #ffffff;
+    position: relative;
+    z-index: 99;
+}
+
+.detail-header .detail-header-center {
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.detail-header img {
+    float: left;
+    display: block;
+    margin: 12px 0px;
+}
+
+.detail-header .detail-nav {
+    float: left;
+    overflow: hidden;
+    width: 25%;
+}
+
+.detail-header .detail-nav div {
+    float: left;
+    line-height: 55px;
+    width: 50%;
+    text-align: center;
+}
+
+.detail-header .detail-nav div a {
+    height: 53px;
+    border-bottom: 2px solid #ffffff;
+    display: inline-block;
+    text-align: center;
+    color: black;
+    letter-spacing: 1px;
+    transition: .5s all;
+}
+
+.detail-header .detail-nav div a:hover {
+    border-bottom: 2px solid #00ae66;
+}
+
+.detail-header .detail-search {
+    float: left;
+    width: 30%;
+}
+
+.detail-header .detail-search input {
+    background: #f2f2f2;
+    width: 100%;
+    height: 35px;
+    margin: 10px 0px;
+    text-indent: 1em;
+    color: #c6c6c6;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+}
+
+.detail-header .detail-user {
+    float: left;
+    width: 15%;
+    overflow: hidden;
+    margin-left: 5%;
+}
+
+.detail-header .detail-user div {
+    float: left;
+    width: 50%;
+    text-align: center;
+    line-height: 32px;
+}
+
+.detail-header .detail-user div p {
+    width: 35px;
+    background: #dcdcdc;
+    margin: 12px auto;
+    height: 33px;
+    width: 65px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.detail-header .detail-user div .green {
+    background: #00ae66;
+    color: #ffffff;
+    border: 1px solid #00ae66;
+}
+
+.detail-header .detail-user div .white {
+    background: #ffffff;
+    color: black;
+    border: 1px solid black;
+}
+
+
+/* 中部 */
+
+.detail-address {
+    background: #f7f7f7;
+    padding-top: 10px 0px;
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.detail-address ul {
+    overflow: hidden;
+    float: left;
+    width: 65%;
+}
+
+.detail-address ul li {
+    float: left;
+    line-height: 70px;
+    color: #a6a6a6;
+}
+
+.detail-address ul li i {
+    font-size: 14px;
+    margin-top: -1px;
+}
+
+.detail-address .detail-list {
+    float: left;
+    width: 420px;
+    margin: 15px 0px;
+}
+
+.detail-address .detail-list ul {
+    width: 100%;
+}
+
+.detail-address .detail-list ul li {
+    width: 8%;
+    text-align: center;
+    line-height: 32px;
+    border: 1px solid #a6a6a6;
+    margin: 0px 1%;
+    border-radius: 3px;
+    transition: .5s all;
+    cursor: pointer;
+}
+
+.detail-address ul li .icon-home {
+    font-size: 18px;
+}
+
+.detail-address .detail-list ul .detail-list-fir,
+.detail-address .detail-list ul .detail-list-las {
+    width: 21%;
+}
+
+.detail-address .detail-list ul li:hover {
+    border: 1px solid #00ae66;
+    background: #00ae66;
+    color: #ffffff;
+}
+.detail-address .detail-list ul .light{
+	 border: 1px solid #00ae66;
+    background: #00ae66;
+    color: #ffffff;
+}
+
+/* 信息处 */
+
+.detail-msg {
+    overflow: hidden;
+    width: 1200px;
+    margin: auto;
+}
+
+.detail-msg .detail-information {
+    width: 72.5%;
+    float: left;
+    margin-right: 2.5%;
+}
+
+.detail-msg .detail-tips {
+    width: 285px;
+    float: left;
+}
+
+.detail-msg .detail-information .detail-title {
+    overflow: hidden;
+    width: 55%;
+    float: left;
+    background: #ffffff;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.detail-msg .detail-information .detail-title h3 {
+    text-align: left;
+    text-indent: 1em;
+    font-weight: normal;
+    color: #454545;
+    line-height: 65px;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.detail-msg .detail-information .detail-title-btn {
+    background: #ffffff;
+    border-bottom: 1px solid #dcdcdc;
+    float: left;
+    width: 45%;
+}
+
+.detail-msg .detail-information .detail-title-btn ul {
+    overflow: hidden;
+}
+
+.detail-msg .detail-information .detail-title-btn ul li {
+    float: left;
+    width: 22%;
+    text-align: center;
+    border: 1px solid #d9d9d9;
+    margin: 17.5px 1.1%;
+    line-height: 28px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #868686;
+}
+
+.detail-msg .detail-information .detail-title-btn ul li i {
+    line-height: 20px;
+    color: #868686;
+}
+
+.detail-msg .detail-infos {
+    width: 100%;
+    position: relative;
+}
+
+.detail-over-style {
+    border-bottom: 1px dashed #d9d9d9;
+}
+
+.detail-overs {
+    overflow: hidden;
+    width: 100%;
+}
+
+.detail-msg .detail-isme {
+    float: left;
+    width: 17.24%;
+    text-indent: 1em;
+    line-height: 35px;
+    background: #f0f3f7;
+}
+
+.detail-msg .detail-infos-msg {
+    float: left;
+    overflow: hidden;
+    background: #ffffff;
+    padding-left: 3%;
+    width: 59.67%;
+    line-height: 35px;
+    font-size: 12px;
+}
+
+.detail-msg .detail-infos-msg a {
+    color: black;
+}
+
+.detail-msg .detail-infos-msg p {
+    color: #787878;
+}
+
+.detail-msg .detail-infos-msg img {
+    margin-top: 10px;
+    display: block;
+    float: left;
+    margin-right: 12px;
+}
+
+.detail-msg .detail-infos .detail-zd {
+    position: absolute;
+    top: -50%;
+    left: 55%;
+    margin: auto;
+}
+
+.detail-msg .detail-infos .detail-go {
+    width: 20%;
+    float: left;
+    background: #ffffff;
+    line-height: 35px;
+}
+
+.detail-msg .detail-infos .detail-go input {
+    width: 20%;
+    margin: 0px 5%;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 13px;
+}
+
+.detail-msg .detail-infos .detail-go-input {
+    width: 60%;
+    float: left;
+    font-size: 12px;
+}
+
+.detail-msg .detail-infos .detail-go-main {
+    width: 40%;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+}
+
+.detail-msg .detail-infos .detail-go-main a {
+    color: black;
+}
+
+
+/*首评*/
+
+.detail-comment-style {
+    overflow: hidden;
+    background: #f0f3f7;
+}
+
+.detail-comment-style .left {
+    width: 17.24%;
+    padding: 20px 0px;
+    float: left;
+}
+
+.detail-comment-style .left img {
+    border: 3px solid white;
+    display: block;
+    margin: auto;
+    box-shadow: 1px 1px 1px 1px gray;
+    width: 72%;
+}
+
+.detail-comment-style .right {
+    width: 82.67%;
+    background: white;
+    padding-top: 20px;
+    float: left;
+}
+
+.detail-comment-style .detail-font {
+    font-size: 14px;
+    width: 94%;
+    padding-left: 3.5%;
+    letter-spacing: 1px;
+    line-height: 25px;
+    height: 270px;
+}
+
+.detail-comment-style .detail-font-cont {
+    overflow: hidden;
+    float: right;
+    width: 30%;
+    margin-right: 2.5%;
+}
+
+.detail-comment-style .detail-font-cont li {
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+    color: #a2a2a2;
+    line-height: 35px;
+}
+
+.detail-msg-subject {
+    margin-bottom: 3px;
+}
+
+.detail-comment-style .detail-comment-msg {
+    width: 79%;
+    overflow: hidden;
+    margin: 18px auto;
+}
+
+.detail-comment-style .detail-comment-msg li p {
+    color: #7d7e7f;
+}
+
+.detail-comment-style .detail-comment-msg li {
+    width: 32%;
+    border-right: 1px solid #b3b3b3;
+    float: left;
+    text-align: center;
+    font-size: 12px;
+}
+
+.detail-comment-style .detail-comment-msg .no-border {
+    border: 0px;
+}
+
+.detail-comment-style .detail-comment-msg li .font-b {
+    margin-top: 4px;
+}
+
+.detail-level {
+    text-align: center;
+}
+
+.detail-level p {
+    font-size: 13px;
+}
+
+.detail-level .detail-level-style {
+    width: 70%;
+    border-radius: 10px;
+    height: 14px;
+    background: #d9d9d9;
+    margin: 12px auto;
+    cursor: pointer;
+    position: relative;
+}
+
+.detail-level .detail-level-color {
+    background: green;
+    height: 14px;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: inset 0px 18px 30px #49dfa1;
+}
+
+
+/*普通评论区*/
+
+.details-ordinary .detail-infos .detail-go-main {
+    float: right;
+}
+
+.detail-reply {
+    float: right;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    background: #f7f8fa;
+}
+
+.detail-comment-style .detail-font-cont .detail-res {
+    background: #f7f8fa;
+}
+
+.details-ordinary .detail-reply {
+    line-height: 40px;
+    font-size: 14px;
+    padding-top: 12px;
+    margin-bottom: 18px;
+}
+
+.details-ordinary .detail-reply b {
+    font-weight: normal;
+    color: #2d64b3;
+    padding-left: 1em;
+}
+
+.details-ordinary .detail-reply .last {
+    padding-left: 3.5%;
+}
+
+.details-ordinary .detail-reply .last div {
+    border: 1px solid gray;
+    width: 90px;
+    line-height: 25px;
+    text-align: center;
+    margin: 12px 2.5%;
+    float: right;
+    background: white;
+    cursor: pointer;
+}
+
+.details-ordinary .detail-reply .detail-date a,
+.details-ordinary .detail-reply .detail-date {
+    text-align: right;
+    padding-right: 12px;
+    font-size: 13px;
+    color: #676767;
+    line-height: 20px;
+}
+
+.details-ordinary .detail-reply img {
+    margin-left: 20px;
+    width: 30px;
+    border: 1px solid gray;
+    padding: 1px;
+}
+
+.details-ordinary .detail-reply .last .detail-say {
+    width: 80%;
+    margin: 12px 10%;
+    border: 0px;
+    background: none;
+}
+
+.details-ordinary .detail-reply .last .detail-say input {
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #d9d9d9;
+    width: 100%;
+    text-indent: 1.5em;
+    color: #b3b3b3;
+}
+
+.details-ordinary .detail-reply .last .detail-say div {
+    background: #00ae66;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    line-height: 30px;
+    width: 70px;
+    margin-right: 0px;
+}
+
+
+/*换页*/
+
+.detail-pageSize {
+    width: 100%;
+    background: white;
+}
+
+
+/* 右侧 */
+
+.detail-tips {
+    width: 25%;
+    /*background: white;*/
+}
+
+.detail-wis {
+    background: white;
+    width: 100%;
+    overflow: hidden;
+}
+
+.detail-tips .detail-tips-msg {
+    width: 80.6%;
+    margin: auto;
+    padding: 45px 0px 25px;
+}
+
+.detail-tips .detail-tips-msg .detail-tips-title {
+    text-align: left;
+    overflow: hidden;
+    line-height: 60px;
+    border-top: 1px solid #cfcfcf;
+    font-size: 13px;
+}
+
+.detail-tips .detail-tips-msg .detail-tips-title a {
+    float: right;
+}
+
+.detail-tips .detail-tips-msg .detail-plate {
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.detail-tips .detail-tips-msg .detail-plate ul {
+    margin-left: 15px;
+    float: left;
+}
+
+.detail-tips .detail-tips-msg .detail-plate li {
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.detail-tips .detail-tips-msg .detail-plate .first {
+    font-size: 15px;
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+
+.detail-tips .detail-tips-msg .detail-plate img {
+    display: block;
+    width: 40%;
+    float: left;
+    border-radius: 200px;
+}
+
+.detail-tips .detail-tips-info {
+    overflow: hidden;
+}
+
+.detail-tips .detail-tips-info li {
+    width: 25.3%;
+    float: left;
+    text-align: center;
+    margin: 0px 4%;
+}
+
+.detail-tips .detail-tips-info li div img {
+    width: 100%;
+}
+
+.detail-tips .detail-tips-info li div p {
+    position: absolute;
+    bottom: 0px;
+    line-height: 20px;
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    color: white;
+    background: url("../images/backs.png");
+    letter-spacing: 1px;
+}
+
+.detail-tips .detail-tips-info li div {
+    width: 100%;
+    border-radius: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.detail-tips .detail-tips-info li p {
+    color: #949494;
+    font-size: 13px;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+.detail-tips .detail-tips-btn {
+    overflow: hidden;
+    margin-top: 12px;
+}
+
+.detail-tips .detail-tips-btn li {
+    background: #00ae66;
+    width: 48%;
+    margin: 6px 0px;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.detail-tips .detail-tips-btn .left {
+    float: left;
+}
+
+.detail-tips .detail-tips-btn .left i {
+    font-size: 17px;
+    padding-right: 5px;
+}
+
+.detail-tips .detail-tips-btn .right i {
+    padding-right: 5px;
+}
+
+.detail-tips .detail-tips-btn .right {
+    float: right;
+}
+
+
+/*右侧热议*/
+
+.detail-hot {
+    margin-top: 20px;
+    background: white;
+}
+
+.detail-hot .detail-wis img {
+    border: 0px;
+}
+
+.detail-hot .detail-wis {
+    width: 80%;
+    margin: auto;
+}
+
+.detail-hot .detail-wis h4 {
+    line-height: 35px;
+    padding-top: 15px;
+}
+
+.detail-hot .detail-wis li {
+    line-height: 45px;
+    border-bottom: 1px dashed #cdcdcd;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.detail-hot .detail-wis li a {
+    color: black;
+}
+
+.detail-hot .detail-wis li b {
+    padding: 0px 20px 0px 12px;
+}
+
+.detail-hot .detail-wis li img {
+    margin-right: 12px;
+}
+
+.detail-hot .detail-wis .detail-hot-last {
+    margin-bottom: 12px;
+}
+
+
+
+
+/* 替换中部 */
+
+.search-result,
+.search-center {
+    margin: 0px auto;
+}
+
+.search-title ul li b {
+    font-weight: normal;
+    color: #7b97c9;
+}
+
+.search-title div img {
+    margin-top: -4px;
+    margin-right: 5px;
+}
+
+.search-title ul li img {
+    margin-left: 6px;
+    margin-top: -4px;
+}
+
+.search-title {
+    overflow: hidden;
+    line-height: 65px;
+    text-align: center;
+    background: white;
+}
+
+.search-title ul li {
+    float: left;
+    /*width: 33.3%;*/
+    font-size: 12px;
+    padding: 0px 6px;
+}
+
+.search-title ul {
+    float: left;
+    width: 40%;
+    overflow: hidden;
+}
+
+.search-title div {
+    font-size: 14px;
+    float: right;
+    padding-right: 12px;
+}
+
+.search-title h3 {
+    font-size: 18px;
+    float: left;
+    font-weight: normal;
+    width: 23%;
+    text-align: left;
+    text-indent: 1em;
+}
+
+.search-screen .fist {
+    background: #f2f2f2;
+}
+
+.user-list .fir .user-losk {
+    margin-left: 12px;
+}
+
+.search-screen .user-top .user-list .fir a {
+    font-weight: 900;
+    color: red;
+    font-size: 15px;
+}
+
+.search-screen .user-top .user-hr i {
+    font-size: 14px;
+    margin-left: 6px;
+    color: #336699;
+    font-weight: 900;
+}
+
+.search-screen .user-top .user-hr {
+    background: #f2f2f2;
+    width: 95%;
+    margin: auto;
+    text-indent: 2em;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.search-screen .the-border {
+    border: 0px;
+}
+
+.search-screen .fir {
+    width: 76.85%;
+}
+
+.search-screen .sec {
+    width: 10.58%;
+}
+
+.page-btn {
+    width: 95%;
+    margin: 12px auto;
+    line-height: 50px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.page-other-btn {
+    overflow: hidden;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+}
+
+.detail-bottom {
+    width: 50%;
+    float: right;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.user-btn {
+    float: left;
+    width: 70px;
+    margin: 15px 0px;
+    line-height: 32px;
+    border: 1px solid #00ae66;
+    text-align: center;
+    border-radius: 3px;
+    background: #00ae66;
+    color: #ffffff;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+
+/*快速发帖*/
+
+.user-quc h4 {
+    background: #f0f0f0;
+    line-height: 50px;
+    text-indent: 1.5em;
+}
+
+.user-quc .user-top {
+    background: #ffffff;
+    padding: 15px 0px;
+}
+
+.user-quc .user-top {
+    overflow: hidden;
+}
+
+.user-quc .user-top select {
+    height: 30px;
+    margin-left: 1.8%;
+    display: block;
+    float: left;
+}
+
+.user-quc .user-top input {
+    float: left;
+    display: block;
+    width: 30%;
+    border: 1px solid rgb(169, 169, 169);
+    height: 28px;
+    line-height: 25px;
+    padding: 0px;
+    margin-left: 12px;
+    text-indent: 1em;
+    color: #c0c0c0;
+}
+
+.user-quc .user-top p {
+    line-height: 30px;
+    float: left;
+    font-size: 13px;
+    color: #c0c0c0;
+    text-indent: 1em;
+}
+
+.user-quc .user-top img {
+    margin: 12px auto;
+    width: 97%;
+    display: block;
+    float: left;
+    margin-left: 1.5%
+}
+
+.user-quc .user-top .user-btn-click {
+    background: #00ae66;
+    color: white;
+    float: right;
+    margin-right: 2%;
+    width: 70px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+}

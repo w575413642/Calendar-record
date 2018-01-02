@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="description" content="" />
+    <meta name="Keywords" content="" />
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_515346_phlpv4f0ug63whfr.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/search.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper-3.4.1.min.js"></script>
+</head>
+<style>
+.mt35 {
+    margin-top:    35px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.error_container {
+    padding: 202px 0;
+}
+
+.err_btn {
+    padding: 12px 20px;
+    background: #00ae66;
+    color: #fff;
+    font-size: 14px;
+    margin: 45px 32px;
+}
+/* 动态为footer添加类fixed-bottom */
+.fixed-bottom {position: fixed;bottom: 0;width:100%;}
+
+</style>
+
+<body class="bg1">
+    <div class="main_container">
+        <!--顶部 -->
+        <div class="detail-header">
+            <div class="detail-header-center">
+                <img src="images/logo1.png" alt="">
+                <!-- 导航 -->
+                <div class="detail-nav">
+                    <div class="">
+                        <a href="#">首页</a>
+                    </div>
+                    <div class="">
+                        <a href="#">意见 / 建议</a>
+                    </div>
+                </div>
+                <!-- 搜索框 -->
+                <div class="detail-search">
+                </div>
+                <!-- 用户 -->
+                <div class="detail-user">
+                    <div id="email">
+                        <i class="icon-email iconfont"></i>
+                        <i class="icon-triangle-fill iconfont"></i>
+                        <ul class="msg-table tra">
+                            <li><a href="">英雄联盟</a></li>
+                            <li><a href="">王者荣耀</a></li>
+                            <li><a href="">绝地潜兵</a></li>
+                        </ul>
+                    </div>
+                    <div id="self">
+                        <img src="images/detail/head.jpg" alt="">
+                        <i class="icon-triangle-fill iconfont"></i>
+                        <ul class="msg-table trb">
+                            <li><a href="">个人信息</a></li>
+                            <li><a href="">我的主页</a></li>
+                            <li><a href="">社区</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <p style="clear: both;"></p>
+            </div>
+        </div>
+        <!-- 中间部分 -->
+        <div class="error_container">
+            <p class="tac"><img src="images/404.png " alt=""></p>
+            <p class="tac font16 mt35"><span class="fa fa-spinner fa-spin mr10"></span>正在自动跳转到上一页，如没有跳转请点击此链接</p>
+            <p class="tac mt60">
+                <a href="index.html" class="err_btn">返回首页</a>
+                <a href="javascript:history.go(-1)" class="err_btn">返回上一页</a>
+            </p>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <p class="tac mk_container">~ 梦咖，让热爱更热 ~</p>
+    <div class="footer w100 fixed-bottom">
+        <p class="tac"><img class="mt10" src="images/logo.png" alt=""></p>
+        <p class="tac footer_nav">
+            <a href="javascript:;" class="footer_list">关于我们</a>
+            <a href="javascript:;" class="footer_list">公司招聘</a>
+            <a href="javascript:;" class="footer_list">意见建议</a>
+            <a href="javascript:;" class="footer_list">商业合作</a>
+        </p>
+        <p class="copyright tac">
+            东莞市梦咖网络科技有限公司 © 2017 Mengga.com 版权所有
+        </p>
+    </div>
+</body>
+
+</html>
+<script>
+$(function() {
+    $("#email").hover(function() {
+        $(".tra").slideToggle(300)
+    }, function() {
+        $(".tra").slideToggle(300)
+    });
+    $("#self").hover(function() {
+        $(".trb").slideToggle(300)
+    }, function() {
+        $(".trb").slideToggle(300)
+    });
+
+    function footerPosition() {
+        $(".footer").removeClass("fixed-bottom");
+        var contentHeight = document.body.scrollHeight, //网页正文全文高度
+            winHeight = window.innerHeight; //可视窗口高度，不包括浏览器顶部工具栏
+        if (!(contentHeight > winHeight)) {
+            //当网页正文高度小于可视窗口高度时，为footer添加类fixed-bottom
+            $("footer").addClass("fixed-bottom");
+        }
+    }
+    footerPosition();
+    $(window).resize(footerPosition);
+});
+</script>

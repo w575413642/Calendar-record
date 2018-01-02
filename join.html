@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>注册</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="http://118.89.64.12:3000/static/css/calendar.css">
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="http://118.89.64.12:3000/static/js/calendar.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <div id="calendar" class="calendar"></div>
+    <div style="border: 1px solid black;">
+      <ul>
+        <li v-for="(lis,index) in message">
+          <p>{{index+1}}.{{lis.msg}}</p>
+        </li>
+      </ul>
+    </div>
+    <div style="border: 1px solid black;">
+      <textarea id="msg" type="text" id="names" placeholder="输入添加内容"></textarea>
+      <div id="subs">提交</div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // 
+
+      var app = new Vue({
+        el: '#app',
+        data: {
+          message: []
+        }
+      })
+      // 进入请求
+      $.ajax({
+        url: 'http://118.89.64.12:3000/api/journal',
+        type: 'GET', //GET
+        async: true, //或false,是否异步
+        data: {
+          name: $('#namesa').val(),
+          time: new Date().toLocaleDateString(),
+          msg: $('#msg').val()
+        },
+        dataType: 'json', //返回的数据格式：json/xml/html/script/jsonp/text
+        success: function (data, textStatus, jqXHR) {
+          console.log(data)
+          $.ajax({
+            url: 'http://118.89.64.12:3000/api/look',
+            type: 'GET', //GET
+            async: true, //或false,是否异步
+            data: {
+              time: new Date().toLocaleDateString(),
+            },
+            dataType: 'json', //返回的数据格式：json/xml/html/script/jsonp/text
+
+            success: function (data, textStatus, jqXHR) {
+              console.log(data);
+              app.message = data.info
+            },
+            error: function (xhr) {
+              console.log(xhr)
+            },
+          })
+        },
+        error: function (xhr) {
+          console.log(xhr)
+        },
+
+      })
+
+      $(".calendar-date li").on("click", function () {
+        var this_ = this;
+        $.ajax({
+          url: 'http://118.89.64.12:3000/api/look',
+          type: 'GET', //GET
+          async: true, //或false,是否异步
+          data: {
+            time: $(this_).attr("data").toString(),
+          },
+          dataType: 'json', //返回的数据格式：json/xml/html/script/jsonp/text
+
+          success: function (data, textStatus, jqXHR) {
+            console.log(data);
+            app.message = data.info
+          },
+          error: function (xhr) {
+            console.log(xhr)
+          },
+        })
+
+      })
+      $("#subs").on("click", function () {
+        $.ajax({
+          url: 'http://118.89.64.12:3000/api/journal',
+          type: 'GET', //GET
+          async: true, //或false,是否异步
+          data: {
+            name: $('#namesa').val(),
+            time: new Date().toLocaleDateString(),
+            msg: $('#msg').val()
+          },
+          dataType: 'json', //返回的数据格式：json/xml/html/script/jsonp/text
+          success: function (data, textStatus, jqXHR) {
+            console.log(data)
+            $.ajax({
+              url: 'http://118.89.64.12:3000/api/look',
+              type: 'GET', //GET
+              async: true, //或false,是否异步
+              data: {
+                time: new Date().toLocaleDateString(),
+              },
+              dataType: 'json', //返回的数据格式：json/xml/html/script/jsonp/text
+
+              success: function (data, textStatus, jqXHR) {
+                console.log(data);
+                app.message = data.info
+              },
+              error: function (xhr) {
+                console.log(xhr)
+              },
+            })
+          },
+          error: function (xhr) {
+            console.log(xhr)
+          },
+
+        })
+      })
+
+      function logs() {
+        $.ajax({
+          url: 'http://118.89.64.12:3000/api/login',
+          type: 'GET', //GET
+          async: true, //或false,是否异步
+          data: {
+            user: $('#aa').val(),
+            password: md5($('#bb').val())
+          },
+          dataType: 'json', //返回的数据格式：json/xml/html/script/jsonp/text
+
+          success: function (data, textStatus, jqXHR) {
+            console.log(data)
+            alert()
+          },
+          error: function (xhr) {
+            console.log(xhr)
+          },
+
+        })
+      }
+
+    })
+  </script>
+</body>
+
+</html>

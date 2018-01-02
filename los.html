@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+</head>
+<body>
+	  <div style="border: 1px solid black;">
+     <input type="text" id="name" name="" value="" placeholder="昵称">
+    <input type="text" id="user" name="" value="" placeholder="用户名">
+    <input type="password" id="password" name="" value="" placeholder="密码">
+    <div class="" onclick="clicks()">
+      bbbss
+    </div>
+  </div>
+  <script>
+  		  function clicks(){
+    $.ajax({
+      url:'http://118.89.64.12:3000/api/brs',
+      type:'GET', //GET
+      async:true,    //或false,是否异步
+      data:{
+        name:$('#name').val(),
+        user:$('#user').val(),
+        password:md5($('#password').val())
+      },
+      dataType:'json',    //返回的数据格式：json/xml/html/script/jsonp/text
+
+      success:function(data,textStatus,jqXHR){
+          console.log(data)
+		  alert(data.info)
+		              location.href = "http://118.89.64.12:3000/api/in"
+      },
+      error:function(xhr){
+          console.log(xhr)
+      },
+
+    })
+  }
+  </script>
+</body>
+</html>

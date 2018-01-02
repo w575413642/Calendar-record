@@ -1,0 +1,197 @@
+.top-fixed{
+    position:fixed;
+    top:0;
+    z-index:99;
+    width:900px;
+}
+
+.h30{
+    height:30px;
+    line-height:30px;
+}
+.h32{
+    height:32px;
+    line-height:32px;
+}
+.h36{
+    height:36px;
+    line-height:36px;
+}
+.h48{
+    height:48px;
+    line-height:48px;
+}
+.h60{
+    height:60px;
+    line-height:60px;
+}
+.c-diy{
+    color:#00ae66;
+}
+.c-diy2{
+    color:#2d64b3;
+}
+.bg-diy{
+    background-color:#00ae66;
+}
+.b-diy{
+    border:1px solid #00ae66;
+}
+.container{
+    width:1200px;
+    margin:0 auto;
+}
+.h-logo{
+    height:35px;
+    width:auto;
+    margin-top:12.5px;
+}
+.search-bar{
+    background-color:#f2f2f2;
+    margin-top:12px;
+    width:400px;
+}
+.search-bar .search::-webkit-input-placeholder,.message::-webkit-input-placeholder,.comment-title::-webkit-input-placeholder{
+    font-size:14px;
+    color:#999;
+    font-family:'微软雅黑',arial,sans-serif;
+}
+.search-icon{
+    height:18px;
+    width:auto;
+    margin-top:9px;
+}
+.home-icon{
+    height:15px;
+    width:auto;
+}
+.member-icon,.stairs-icon{
+    height:15px;
+    width:auto
+}
+.main-pane{
+    width:900px;
+}
+.side-pane{
+    width:285px;
+}
+.agree-icon,.reply-icon{
+    height:13px;
+    width:auto;
+    vertical-align:baseline;
+}
+.user-icon{
+    height:12px;
+    width:auto;
+}
+.pmessage-icon{
+    height:14px;
+    width:auto;
+    vertical-align:baseline;
+    position:relative;
+    top:2px;
+}
+.user-bar{
+    width:160px;
+    background-color:#f0f3f7;
+    border-bottom:3px solid #fff;
+}
+.post-bar{
+    width:740px;
+    background-color:#fff;
+    border-bottom:3px solid #f7f7f7;
+}
+.post-content{
+    min-height:300px;
+}
+.user-bar{
+    min-height:380px;
+}
+.user-bar .avatar-pane{
+    width:130px;
+    height:130px;
+    box-shadow:0 3px 5px rgba(0,0,0,.5);
+}
+.user-bar .avatar-pane .avatar{
+    width:122px;
+    height:122px;
+}
+.profile-bar{
+    width:417px;
+    position:absolute;
+    left:0;
+    top:33px;
+    z-index:99;
+}
+.profile-bar .avatar{
+    width:100px;
+    height:100px;
+}
+.message-pane{
+    background-color:#f7f7f7;
+} 
+.message-pane .avatar{
+    width:22px;
+    height:22px;
+    box-shadow:0 1px 3px rgba(0,0,0,.5);
+}
+.profile-bar .member-info{
+    width:300px;
+}
+.user-bar .level-pane{
+    width:130px;
+}
+.search-floor{
+    width:50px;
+    border-top:1px solid #333;
+    border-left:1px solid #333;
+    border-bottom:1px solid #e5e5e5;
+    border-right:1px solid #e5e5e5;
+}
+.post-setup a{
+    width:48%;
+}
+.post-setup img{
+    height:16px;
+    width:auto;
+    vertical-align:middle;
+}
+.hottest1{
+    background:url(../images/h_red_flag.png)center no-repeat;
+    background-size:cover;
+    color:#fff;
+    font-size:12px;
+}
+.hottest2{
+    background:url(../images/h_yellow_flag.png)center no-repeat;
+    background-size:cover;
+    color:#fff;
+    font-size:12px;
+}
+.hottest3{
+    background:url(../images/h_green_flag.png)center no-repeat;
+    background-size:cover;
+    color:#fff;
+    font-size:12px;
+}  
+.down-arrow{
+    width:0;
+    height:0;
+    display:inline-block;
+    border-left:4px solid transparent;
+    border-top-width:4px;
+    border-top-style:solid;
+    border-right:4px solid transparent;
+}
+.catalog{
+    width:135px;
+}
+.comment-title{
+    width:380px;
+}
+.progressbar-bar{
+    background-color:transparent!important;
+    box-shadow:none!important;
+    margin-left:8px!important;
+    cursor:pointer;
+}
